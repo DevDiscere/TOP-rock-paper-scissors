@@ -12,3 +12,10 @@ function getComputerChoice () {
             return computerChoice = "Scissors";
     }
 }
+
+function getHumanChoice() {
+    let humanChoice = "";
+
+    humanChoice = prompt('Play a hand ("Rock", "Paper", "Scissors"): ');
+    return humanChoice;
+}
