@@ -72,4 +72,21 @@ function playGame(numberOfTries) {
     }
 }
 
-playGame(5);
+function playerSelection(event) {
+    let targetButton = event.target.classList.value;
+    switch(targetButton) {
+        case "rock-button":
+            alert("You chose rock!");
+            break;
+        case "paper-button":
+            alert("You chose paper!");
+            break;
+        case "scissors-button":
+            alert("You chose scissors!");
+            break;
+    }
+}
+
+const body = document.querySelector("body");
+body.addEventListener('click', playerSelection);
+// playGame(5);
