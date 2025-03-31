@@ -1,23 +1,36 @@
-function getComputerChoice () {
-    let randomNumber = 0;
-    let computerChoice = "";
+function getComputerChoice() {
+    const NUMBER_OF_HANDS = 3;
+    const OFFSET_BY_ONE = 1;
     
-    randomNumber = Math.floor(Math.random() * 3) + 1;
+    let randomNumber = Math.floor(Math.random() * NUMBER_OF_HANDS) + OFFSET_BY_ONE;
     switch(randomNumber) {
-        case 1:
-            return computerChoice = "Rock";
-        case 2:
-            return computerChoice = "Paper";
-        case 3:
-            return computerChoice = "Scissors";
+        case 1: return "Rock";
+        case 2: return "Paper";
+        case 3: return "Scissors";
     }
 }
 
-function getHumanChoice() {
+function playerSelection(event) {
+    let targetButton = event.target.classList.value;
     let humanChoice = "";
 
-    humanChoice = prompt('Play a hand ("Rock", "Paper", "Scissors"): ');
-    return humanChoice;
+    switch(targetButton) {
+        case "rock-button":
+            humanChoice = "Rock";
+            console.log(`You played ${humanChoice}!`);
+            // Play Round
+            break;
+        case "paper-button":
+            humanChoice = "Paper";
+            console.log(`You played ${humanChoice}!`);
+            // Play Round
+            break;
+        case "scissors-button":
+            humanChoice = "Scissors";
+            console.log(`You played ${humanChoice}!`);
+            // Play Round
+            break;
+    }
 }
 
 function playGame(numberOfTries) {
@@ -69,21 +82,6 @@ function playGame(numberOfTries) {
         console.log("COMPUTER WINS!!!")
     } else {
         console.log("NO ONE WINS...")
-    }
-}
-
-function playerSelection(event) {
-    let targetButton = event.target.classList.value;
-    switch(targetButton) {
-        case "rock-button":
-            alert("You chose rock!");
-            break;
-        case "paper-button":
-            alert("You chose paper!");
-            break;
-        case "scissors-button":
-            alert("You chose scissors!");
-            break;
     }
 }
 
