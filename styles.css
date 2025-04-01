@@ -1,3 +1,151 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+    margin: 0;
+    /* outline: 1px solid firebrick; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+body {
+    background-color: #4084c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    text-align: center;
+    color: white;
+    font-family: "Poppins", Roboto, sans-serif;
+    background-color: #2C3E50;
+    width: 800px;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+.winner-container, .result-container {
+    background-color: #F1C40F;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.result-container {
+    background-color: #ECF0F1;
+}
+
+.round-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.hand-container {
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.human {
+    background-color: #3b89ff;
+}
+
+.computer {
+    background-color: #ff3b3b;
+}
+
+.hand-container p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.versus-text {
+    font-size: 6rem;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.command-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
 .hide {
     display: none;
 }
