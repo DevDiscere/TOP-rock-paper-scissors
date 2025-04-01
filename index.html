@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="./styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,37 +11,42 @@
     </head>
     <body>
         <main>
-            <h1>Five-Round Rock Paper Scissors!</h1>
-            <section class="image-container">
-                <img src="./images/rock_hand.svg" alt="A picture of a hand in a closed fist position inside two red circles." width="200" height="200">
-                <img src="./images/paper_hand.svg" alt="A picture of a hand in a open palm position inside two green circles." width="200" height="200">
-                <img src="./images/scissors_hand.svg" alt="A picture of a hand in a scissors position inside two blue circles." width="200" height="200">     
-            </section>
-            <button class="start-button">Start Game</button>
-            <section class="game-container hide">
-                <p class="winner-container hide"></p>
-                <div class="round-container">
-                    <div class="hand-container human">
-                        <img class="human-hand" src="./images/default_choice.svg" alt="A picture of a question mark inside two gray circles." width="200" height="200">
-                        <p class="human-score">YOU: 0</p>
+            <div class="main-container">
+                <h1>Five-Round Rock Paper Scissors!</h1>
+                <section class="image-container">
+                    <img src="./images/rock_hand.svg" alt="A picture of a hand in a closed fist position inside two red circles." width="200" height="200">
+                    <img src="./images/paper_hand.svg" alt="A picture of a hand in a open palm position inside two green circles." width="200" height="200">
+                    <img src="./images/scissors_hand.svg" alt="A picture of a hand in a scissors position inside two blue circles." width="200" height="200">     
+                </section>
+                <button class="start-button">Start Game</button>
+                <section class="game-container hide">
+                    <p class="winner-container hide"></p>
+                    <div class="round-container">
+                        <div class="hand-container human">
+                            <img class="human-hand" src="./images/default_choice.svg" alt="A picture of a question mark inside two gray circles." width="200" height="200">
+                            <p class="human-score">YOU: 0</p>
+                        </div>
+                        <p class="versus-text">VS</p>
+                        <div class="hand-container computer">
+                            <img class="computer-hand" src="./images/default_choice.svg" alt="A picture of a question mark inside two gray circles." width="200" height="200">
+                            <p class="computer-score">COMPUTER: 0</p>
+                        </div>
                     </div>
-                    <p class="versus-text">VS</p>
-                    <div class="hand-container computer">
-                        <img class="computer-hand" src="./images/default_choice.svg" alt="A picture of a question mark inside two gray circles." width="200" height="200">
-                        <p class="computer-score">COMPUTER: 0</p>
+                    <p class="result-container">Choose a hand to throw.</p>
+                    <div class="choice-container">
+                        <button class="rock-button">Throw Rock</button>
+                        <button class="paper-button">Throw Paper</button>
+                        <button class="scissors-button">Throw Scissors</button>
                     </div>
-                </div>
-                <p class="result-container">Choose a hand to throw.</p>
-                <div class="choice-container">
-                    <button class="rock-button">Throw Rock</button>
-                    <button class="paper-button">Throw Paper</button>
-                    <button class="scissors-button">Throw Scissors</button>
-                </div>
-                <div class="command-container hide">
-                    <button class="reset-button">Play Again</button>
-                    <button class="quit-button">End Game</button>
-                </div>
-            </section>
+                    <div class="command-container hide">
+                        <button class="reset-button">Play Again</button>
+                        <button class="quit-button">End Game</button>
+                    </div>
+                </section>
+            </div>
         </main>
+        <footer>
+            <p>Created by Dev Discere 2025</p>
+        </footer>
     </body>
 </html>
